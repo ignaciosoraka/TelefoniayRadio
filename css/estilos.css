@@ -54,14 +54,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #00000000;
+  background-color: #00000008;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   z-index: 99; /* Z-index mayor para que esté por encima del header */
 }
-
 
 
 /*---------------------------------------
@@ -362,6 +361,17 @@ strong {
   height: auto;
 }
 
+@media(max-width:786px){
+  .logo {
+    width: 130px;
+    height: auto;
+  }
+}
+
+
+
+
+
 .navbar-expand-lg .navbar-nav .nav-link {
   margin-right: 0;
   margin-left: 0;
@@ -448,6 +458,7 @@ strong {
   width: 30px;
   height: 35px;
   outline: none;
+  z-index: 2;
 }
 
 .navbar-toggler:focus {
@@ -457,6 +468,7 @@ strong {
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: transparent;
+  z-index: 2;
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
@@ -543,11 +555,13 @@ strong {
   height: 680px;
   min-height: 680px;
   position: relative;
+  
 }
 
 .carousel:hover .carousel-control-next-icon, 
 .carousel:hover .carousel-control-prev-icon {
   opacity: 1;
+  
 }
 
 #hero-slide .carousel-item {
@@ -593,21 +607,7 @@ strong {
   opacity: 1;
 }
 
-.carousel-control-next-icon, 
-.carousel-control-prev-icon {
-  background-color: var(--secondary-color);
-  border-radius: var(--border-radius-large);
-  background-size: 60% 60%;
-  width: 80px;
-  height: 80px;
-  opacity: 0;
-  transition: all 0.5s;
-}
 
-.carousel-control-next-icon:hover, 
-.carousel-control-prev-icon:hover {
-  background-color: var(--primary-color);
-}
 
 
 /*---------------------------------------
@@ -1590,14 +1590,18 @@ form>button:hover,
   .navbar {
     padding-top: 6px;
     padding-bottom: 6px;
+    
   }
 
   .navbar-expand-lg .navbar-nav {
     padding-bottom: 30px;
+    
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 8px 20px;
+    
+    
   }
   
   .dropdown:hover .dropdown-menu {
@@ -1606,6 +1610,7 @@ form>button:hover,
     margin-top: 5px;
     margin-bottom: 20px;
     left: 20px;
+    
   }
 
   .site-header .social-icon {
@@ -1620,6 +1625,7 @@ form>button:hover,
   .carousel:hover .carousel-control-next-icon, 
   .carousel:hover .carousel-control-prev-icon {
     opacity: 1;
+    
   }
 
   #hero-slide .carousel-item {
@@ -1639,6 +1645,7 @@ form>button:hover,
     opacity: 1;
     width: 60px;
     height: 60px;
+    
   }
 
   .news-detail-header-section {
@@ -1778,6 +1785,7 @@ form>button:hover,
   .carousel-control-prev-icon {
     width: 45px;
     height: 45px;
+    
   }
 
   .volunteer-image {
