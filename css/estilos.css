@@ -54,7 +54,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #00000008;
+ 
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -410,12 +410,10 @@ strong {
   font-weight: var(--font-weight-medium);
   position: relative;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
-.dropdown-menu li:last-child .dropdown-item {
-  padding-top: 0;
-}
+
 
 .dropdown-item.active, 
 .dropdown-item:active,
@@ -696,47 +694,181 @@ strong {
 /*---------------------------------------
   VOLUNTEER              
 -----------------------------------------*/
-.volunteer-section {
-  background: var(--secondary-color);
+/* 
+---------------------------------------------
+Visit Country Style
+--------------------------------------------- 
+*/
+
+.visit-country {
+  margin-top: 120px;
+}
+
+.visit-country .side-bar-map {
+  margin-left: 30px;
+}
+
+.visit-country .item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.visit-country .last-item {
+  border-bottom: none;
+}
+
+.visit-country .item .image img {
+  border-radius: 23px;
+}
+
+.visit-country .item .right-content h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.visit-country .item .right-content span {
+  font-size: 15px;
+  color: #afafaf;
+  display: block;
+}
+
+.visit-country .item .right-content .main-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main-button a {
+  font-size: 14px;
+  color: #fff;
+  background-color: #0e3591;
+
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
   position: relative;
   overflow: hidden;
 }
+.visit-country .item .right-content .main-button a:hover {
+  background-color: #223fc1;
+  border-color: #223cc1;
+  color: #fff;
+  opacity: 0.8;
+}
 
-.volunteer-section::after {
-  content: "";
-  background: var(--primary-color);
+.visit-country .item .right-content p {
+  margin: 18px 0px;
+}
+
+.visit-country .item .right-content ul {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0px;
+}
+
+.visit-country .item .right-content ul li {
+  display: inline-block;
+  width: 32%;
+  color: #afafaf;
+  font-size: 14px;
+}
+
+.visit-country .item .right-content ul li:nth-child(2) {
+  text-align: center;
+}
+
+.visit-country .item .right-content ul li:last-child {
+  text-align: right;
+}
+
+.visit-country .item .right-content ul li i {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.visit-country .item .right-content .text-button {
+  margin-top: 20px;
+}
+
+.visit-country ul.page-numbers {
+  text-align: center;
+}
+
+.visit-country ul.page-numbers li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.visit-country ul.page-numbers li a {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #22b3c1;
+  line-height: 44px;
+  color: #22b3c1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
   border-radius: 50%;
-  position: absolute;
-  bottom: -110px;
-  right: -80px;
-  width: 350px;
-  height: 350px;
+  transition: all .3s;
 }
 
-.volunteer-form {
-  background: var(--white-color);
-  border-radius: var(--border-radius-medium);
-  padding: 50px;
+.visit-country ul.page-numbers li a:hover {
+  background-color: #22b3c1;
+  color: #fff;
 }
 
-.volunteer-image {
-  border-radius: 100%;
-  display: block;
-  margin: auto;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+.visit-country ul.page-numbers li.active a {
+  background-color: #22b3c1;
+  color: #fff;
 }
 
-.volunteer-section .custom-block-body {
-  max-width: 440px;
-  margin: 0 auto;
+.visit-country ul.page-numbers li:first-child a,
+.visit-country ul.page-numbers li:last-child a {
+  border: none;
 }
 
-.volunteer-section .custom-block-body p {
-  line-height: 1.7;
+.image img{
+  width: 100%;
+  
 }
 
+
+
+@media (max-width: 767px) {
+
+  .visit-country .item .right-content .main-button a {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .visit-country .item .right-content ul li {
+    width: 30%;
+  }
+  .visit-country .item .right-content h4 {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .visit-country .item .right-content ul li {
+    width: 30% !important;
+  }
+
+  .visit-country .item .right-content {
+    position: relative;
+  }
+  .visit-country .side-bar-map {
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+}
 
 /*---------------------------------------
   DONATE              
