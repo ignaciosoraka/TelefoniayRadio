@@ -854,6 +854,16 @@ Visit Country Style
   .visit-country .item .right-content h4 {
     margin-top: 20px;
   }
+
+  .image {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.image img {
+    width: 170px; /* Ancho deseado */
+}
+  
 }
 
 @media (max-width: 992px) {
