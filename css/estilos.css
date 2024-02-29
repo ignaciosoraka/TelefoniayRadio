@@ -172,7 +172,72 @@ strong {
 .section-overlay + .container {
   position: relative;
 }
+/* Estilos del botón de WhatsApp */
 
+@keyframes float {
+
+  0%,
+  100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+
+/*---------------------------------------
+  flotante whatapp             
+-----------------------------------------*/
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  /* Color verde de WhatsApp */
+  color: #ffffff;
+  /* Color del texto */
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.527);
+  z-index: 1000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+  color: #fff;
+  /* Color más oscuro para el efecto hover */
+}
+
+.whatsapp-text {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.whatsapp-logo img {
+  width: 50px;
+  /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+
+}
+
+@media (max-width: 767px){
+
+  .whatsapp-button {
+      padding: 5px 10px;
+  }
+
+  .whatsapp-logo img {
+      width: 30px;
+  /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+  }
+}
 
 /*---------------------------------------
   CUSTOM BLOCK               
@@ -254,8 +319,8 @@ strong {
 
 .custom-text-box-image {
   border-radius: var(--border-radius-medium);
-  width: 100%;
-  height: 100%;
+  width: 800px;
+  height: 90%;
   object-fit: cover;
 }
 
@@ -569,7 +634,7 @@ strong {
 
 #hero-slide .carousel-caption {
   background: var(--white-color);
-  clip-path: polygon(100% 100%, 100% 150px, 0 100%);
+  clip-path: polygon(100% 100%, 100% 300px, 0 100%);
   color: var(--secondary-color);
   top: 1px;
   bottom: -1px;
@@ -605,6 +670,257 @@ strong {
   opacity: 1;
 }
 
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  /* Cambiar la imagen del primer carousel item en dispositivos móviles */
+  #hero-slide .carousel-item:nth-of-type(1) img {
+    content: url('../images/img-aitue-28-telefonia-mobile.jpg');
+  }
+
+  /* Cambiar la imagen del segundo carousel item en dispositivos móviles */
+  #hero-slide .carousel-item:nth-of-type(2) img {
+    content: url('../images/img-aitue-29-radio-mobile.jpg');
+  }
+
+  /* Cambiar la imagen del tercer carousel item en dispositivos móviles */
+  #hero-slide .carousel-item:nth-of-type(3) img {
+    content: url('../images/img-aitue-32-mensajeria-mobile\ \(1\).jpg');
+  }
+
+  /* Cambiar la imagen del cuarto carousel item en dispositivos móviles */
+  #hero-slide .carousel-item:nth-of-type(4) img {
+    content: url('../images/antena-mobile.jpg');
+  }
+}
+
+/*---------------------------------------
+  HERO de los productos       
+-----------------------------------------*/
+.hero2-section-full-height {
+  height: 680px;
+  min-height: 680px;
+  position: relative;
+  
+}
+
+.carousel:hover .carousel-control-next-icon, 
+.carousel:hover .carousel-control-prev-icon {
+  opacity: 1;
+  
+}
+
+#hero2-slide .carousel-item {
+  height: 680px;
+  min-height: 680px;
+}
+
+#hero2-slide .carousel-caption {
+  
+  color: var(--secondary-color);
+  top: 1px;
+  bottom: -1px;
+  right: 0;
+  left: auto;
+  text-align: right;
+  min-width: 680px;
+  min-height: 680px;
+  padding: 100px 100px 50px 100px;
+}
+
+.carousel-image {
+  display: block;
+  width: 100%;
+  min-height: 680px;
+}
+
+#hero2-slide .carousel-indicators-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#hero2-slide .carousel-indicators {
+  margin-right: 0;
+  margin-left: 22px;
+  justify-content: inherit;
+}
+
+.carousel-control-next, 
+.carousel-control-prev {
+  opacity: 1;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  /* Cambiar la imagen del primer carousel item en dispositivos móviles */
+  #hero2-slide .carousel-item:nth-of-type(1) img {
+    content: url('../images/mobiletelefonia.jpg');
+    
+  }
+/* Cambiar la imagen del segundo carousel item en dispositivos móviles */
+#hero3-slide .carousel-item:nth-of-type(2) img {
+  content: url('../images/mobileradio.jpg');
+}
+
+/* Cambiar la imagen del tercer carousel item en dispositivos móviles */
+#hero2-slide .carousel-item:nth-of-type(3) img {
+  content: url('../images/mobilemensajeria.jpg');
+}
+
+/* Cambiar la imagen del cuarto carousel item en dispositivos móviles */
+#hero2-slide .carousel-item:nth-of-type(4) img {
+  content: url('../images/mobilesatelite.jpg');
+}
+
+
+}
+
+/*---------------------------------------
+  RADIO    
+-----------------------------------------*/
+.hero3-section-full-height {
+  height: 680px;
+  min-height: 680px;
+  position: relative;
+  
+}
+
+#hero3-slide .carousel-item {
+  height: 680px;
+  min-height: 680px;
+}
+
+#hero3-slide .carousel-caption {
+  
+  color: var(--secondary-color);
+  top: 1px;
+  bottom: -1px;
+  right: 0;
+  left: auto;
+  text-align: right;
+  min-width: 680px;
+  min-height: 680px;
+  padding: 100px 100px 50px 100px;
+}
+
+
+#hero3-slide .carousel-indicators-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#hero3-slide .carousel-indicators {
+  margin-right: 0;
+  margin-left: 22px;
+  justify-content: inherit;
+}
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+ 
+/* Cambiar la imagen del segundo carousel item en dispositivos móviles */
+#hero3-slide .carousel-item:nth-of-type(1) img {
+  content: url('../images/mobileradio.jpg');
+}}
+/*---------------------------------------
+  MENSAJERIA      
+-----------------------------------------*/
+.hero4-section-full-height {
+  height: 680px;
+  min-height: 680px;
+  position: relative;
+  
+}
+
+#hero4-slide .carousel-item {
+  height: 680px;
+  min-height: 680px;
+}
+
+#hero4-slide .carousel-caption {
+  
+  color: var(--secondary-color);
+  top: 1px;
+  bottom: -1px;
+  right: 0;
+  left: auto;
+  text-align: right;
+  min-width: 680px;
+  min-height: 680px;
+  padding: 100px 100px 50px 100px;
+}
+
+
+#hero4-slide .carousel-indicators-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#hero4-slide .carousel-indicators {
+  margin-right: 0;
+  margin-left: 22px;
+  justify-content: inherit;
+}
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+ 
+/* Cambiar la imagen del segundo carousel item en dispositivos móviles */
+#hero4-slide .carousel-item:nth-of-type(1) img {
+  content: url('../images/mobilemensajeria.jpg');
+}}
+/*---------------------------------------
+  ANTENA    
+-----------------------------------------*/
+.hero5-section-full-height {
+  height: 680px;
+  min-height: 680px;
+  position: relative;
+  
+}
+
+#hero5-slide .carousel-item {
+  height: 680px;
+  min-height: 680px;
+}
+
+#hero5-slide .carousel-caption {
+  
+  color: var(--secondary-color);
+  top: 1px;
+  bottom: -1px;
+  right: 0;
+  left: auto;
+  text-align: right;
+  min-width: 680px;
+  min-height: 680px;
+  padding: 100px 100px 50px 100px;
+}
+
+
+#hero5-slide .carousel-indicators-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#hero5-slide .carousel-indicators {
+  margin-right: 0;
+  margin-left: 22px;
+  justify-content: inherit;
+}
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+ 
+/* Cambiar la imagen del segundo carousel item en dispositivos móviles */
+#hero5-slide .carousel-item:nth-of-type(1) img {
+  content: url('../images/mobilesatelite.jpg');
+}}
 
 
 
@@ -842,6 +1158,9 @@ Visit Country Style
 
 
 @media (max-width: 767px) {
+  .visit-country {
+    margin-top: -120px;
+  }
 
   .visit-country .item .right-content .main-button a {
     font-size: 14px;
@@ -1207,6 +1526,73 @@ blockquote::before {
   margin-bottom: 30px;
   padding-bottom: 30px;
   width: 100%;
+}
+/*---------------------------------------
+  socios comerciales           
+-----------------------------------------*/
+.slider2{
+   
+  padding-top: 10px;
+  width: 75vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider2 .slide2-track{
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(200px * 14);
+  margin: 0 auto ;
+  margin-bottom: 100px;
+}
+
+.slider2 .slide2{
+  width: 200px;
+  margin: 0 25px; /* Espacio entre las marcas */
+}
+
+.marcas{
+  text-align: center;
+  font-size: 35px;
+  padding: 100px 0;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+@keyframes scroll {
+  0%{
+      -webkit-animation: translateX(0);
+      transform:  translateX(0);
+  }
+
+  100%{
+      -webkit-animation: translateX(calc(-200px * 10));
+      transform:  translateX(calc(-200px * 10));
+  }
+}
+/* Ajuste para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .slider .slide {
+      width: 80px; /* Ajusta el ancho de cada slide para dispositivos móviles */
+     
+  }
+  .slider{
+      padding-top: -100px;
+  }
+
+  .marcas {
+      margin-top: 130px;
+      font-size: 30px;
+      
+  }
+
+  .testimony1{
+   margin-top: -200px;
+  }
 }
 
 
@@ -1687,8 +2073,8 @@ form>button:hover,
 
 @media screen and (max-width: 1170px) {
   #hero-slide .carousel-image {
-    height: 100%;
-    object-fit: cover;
+    height: 100vh;
+    
   }
 }
 
@@ -1900,7 +2286,7 @@ form>button:hover,
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   h2 {
