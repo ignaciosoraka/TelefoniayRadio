@@ -1992,6 +1992,9 @@ form>button:hover,
 .site-footer .custom-btn:hover {
   background: var(--primary-color);
 }
+.site-footer h5{
+  color:#3498db;
+}
 
 
 /*---------------------------------------
