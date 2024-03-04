@@ -682,6 +682,15 @@ strong {
   transform: translateY(-50%);
   
 }
+
+@media (max-width:786px)
+{.carousel-control-next, 
+  .carousel-control-prev {
+    width: 40px; /* Ajusta el ancho deseado */
+  height: 40px; 
+  }
+}
+
 .carousel-control-prev {
   left: 30px; /* Ajusta la distancia desde el borde izquierdo */
 }
