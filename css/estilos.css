@@ -1780,10 +1780,12 @@ blockquote::before {
   margin-bottom: 100px;
   position: relative;
   background-image: linear-gradient(135deg, rgb(0, 11, 46) 0%, rgb(40, 78, 148) 100%);
+
 }
 
 
 .content {
+  margin-left: 100px;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   padding: 20px;
@@ -1791,7 +1793,10 @@ blockquote::before {
   width: 1000px;
   margin-top: 50px;
   margin-bottom: 50px;
-
+  margin-left: auto;
+  margin-right: auto;
+ 
+  
 }
 
 .box-info {
@@ -1875,7 +1880,9 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-left: -20px;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
 .box-info {

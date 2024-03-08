@@ -88,11 +88,11 @@
 
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#top">Inicio</a>
+                        <a class="nav-link click-scroll" href="index.html">Inicio</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_2">Proveedores</a>
+                        <a class="nav-link click-scroll" href="index.html#section_2">Proveedores</a>
                     </li>
 
 
@@ -130,37 +130,12 @@
             </div>
         </a>
 
-        <section class="hero-section hero-section-full-height">
-            <div id="particles-js"></div>
-            <div class="container-fluid">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12 p-0">
-                        <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/img-aitue-31-satelital.jpg" class="carousel-image img-fluid" alt="...">
-
-                                    <div class="carousel-caption d-flex flex-column justify-content-end">
-                                        <h1>Contacto</h1>
-
-                                        <p>Mantené conversaciones nítidas y fiables.</p>
-                                    </div>
-                                </div>
-
-                               
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+       
 
 
     </main>
 
-    <section id="formulario" class="formulario" style="margin-top: 100px;">
+    <section id="formulario" class="formulario" style="margin-bottom: 2px;">
         <div class="content">
             <div class="box-info">
                 <h1>CONTACTATE CON NOSOTROS</h1>
@@ -168,7 +143,7 @@
                     <p style="color: white;"><i class="fa-solid fa-phone"></i> <span
                             style="color: white; text-decoration: none;">+54 9 11 4164-0955</span></p>
 
-                    <p><i class="fa-solid fa-envelope"></i> Susana@aitue.net</p>
+                    <p style="color: white;"><i class="fa-solid fa-envelope"></i> Susana@aitue.net</p>
                     <p><i class="fa-solid fa-location-dot"></i> Av. Cerviño 3244, C1425 CABA, Buenos Aires, Argentina
                     </p>
                 </div>
@@ -178,23 +153,32 @@
                     <a href="https://www.instagram.com/aituecomunica/" target="_blank"><i
                             class="fa-brands fa-instagram"></i></a>
 
-                    <a
-                        href="https://www.linkedin.com/company/aitue/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BBlgDSkG7SFqn1Zf1oLqvPg%3D%3D"><i
-                            class="fa-brands fa-linkedin" target="_blank"></i></a>
+                    <a href="https://www.linkedin.com/company/aitue/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BBlgDSkG7SFqn1Zf1oLqvPg%3D%3D"
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-            <form action="correos.php" method="POST">
+            <form method="post" action="mail.php" enctype="multipart/form-data">
                 <div class="input-box">
-                    <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                    <input type="text" name="nombre" autocapitalize="words" autocomplete="off"
+                        placeholder="Nombre y apellido" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="email" name="email" required placeholder="Correo electrónico">
+                    <input type="email" name="email" autocomplete="off" placeholder="Correo electrónico" required>
                     <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="input-box">
                     <input type="text" name="ciudad" placeholder="Ciudad">
                     <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <div>
+                    <span style="color: azure;">Asunto del mensaje</span>
+                    <select name="asunto">
+                        <option>Telefonía</option>
+                        <option>Radio</option>
+                        <option>Mensajería</option>
+                        <option>Antena Autoapuntable</option>
+                    </select>
                 </div>
                 <div class="input-box">
                     <textarea name="mensaje" placeholder="Escribe tu mensaje..."></textarea>
@@ -208,7 +192,7 @@
 
 
     <footer class="site-footer">
-        <div id="particles-js"></div>
+        
         <div class="container">
 
             <div class="row">
